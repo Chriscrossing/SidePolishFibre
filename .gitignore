@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Meep DataFiles
+#*.h5
+#*/data/*
+
+2D_TransmissionSpectrum/*
+2D_CrossSectionModeSolving/*
+
+
+

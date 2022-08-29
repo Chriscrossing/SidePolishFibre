@@ -1,3 +1,4 @@
+from tkinter import Variable
 import meep as mp
 import numpy as np
 from datetime import date
@@ -67,6 +68,9 @@ class structure:
 
         #make objects
 
+    def printVariables(self):
+        for k,v in self.Variables.items():
+            print(k,v)
 
     def buildStructure(self):
 
@@ -78,6 +82,9 @@ class structure:
             self.Variables['nCoating'] = self.PDMSindex(self.Variables['T'])
         elif self.Variables['setCoating'] == "Air":
             self.Variables['nCoating'] = self.Variables['nAir']
+        else:
+            pass
+
 
         if self.Variables['FibreType']   == "Polished":
             if self.Variables['Tdependance'] == True:

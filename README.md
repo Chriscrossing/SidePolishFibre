@@ -46,6 +46,21 @@ Now that you have an anaconda instance installed in WSL, we can now install MEEP
 
 > `conda create -n mp -c conda-forge pymeep pymeep-extras numpy matplotlib jupyter lmfit scipy pandas`
 
-I've added a few extra python packages there that will likely be useful for our work. 
+I've added a few extra python packages there that will likely be useful for our work. Activate the newly created python virtual enviroment now with:
 
-Now navagate to the main jupyter notebook I've set up for you for working on our model > [notebook](2D_DirectModeExcitement/ModeSolving/PolishedFibreCavity_Tutorial.ipynb)
+> `conda activate mp`
+
+You'll have to run that last command every time you open WSL, finally when you are in a directory you want to work in, open up jupyter notebook with the following command: 
+
+> `jupyter notebook`
+
+
+## Downloading this repository
+
+What you will want to do now you have everything installed is to clone this repository with all its files, to do this you need to have either git installed on WSL or download the windows app [Github Desktop](https://desktop.github.com) then you can clone the repository with this pages URL https://github.com/Chriscrossing/SidePolishFibre.
+
+
+Now you can open WSL and `cd` into this cloned repo, open jupyter notebook using the command `jupyter notebook` and then navigate to a notebook that I've set up for you to mess with [here](2D_DirectModeExcitement/ModeSolving/PolishedFibreCavity_Tutorial.ipynb) in: `/2D_DirectModeExcitement/ModeSolving/
+`
+
+Let me know if you get stuck. 
